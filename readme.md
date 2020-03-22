@@ -15,8 +15,8 @@
 - [php5/php7 数组底层如何实现？](./docs/01.PHP/php_array.md)
 - [单引号和双引号的区别](./docs/01.PHP/simple.md#单引号和双引号的区别)
 - [isset和empty的区别](./docs/01.PHP/simple.md#isset和empty的区别)
-- [static、self、$this 的区别](./docs/01.PHP/simple.md#static、self、$this的区别)
-- [include、require、include_once、require_once 的区别](./docs/01.PHP/simple.md#include、require、include_once、require_once的区别)
+- [static、self、$this的区别](./docs/01.PHP/simple.md#static、self、$this的区别)
+- [include、require、include_once、require_once的区别](./docs/01.PHP/simple.md#include、require、include_once、require_once的区别)
 
 
 ### 二、数据库篇
