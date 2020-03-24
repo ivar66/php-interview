@@ -30,7 +30,7 @@ easy_install supervisor
 ```
 
 ## 三、配置文件说明
-supervisor.conf配置文件(位置：/etc/supervisord.conf)说明：
+3.1、supervisor.conf配置文件(位置：/etc/supervisord.conf)说明：
 ```shell
 
 ; Sample supervisor config file.
@@ -163,3 +163,66 @@ serverurl=unix:///run/supervisor/supervisor.sock ; use a unix:// URL  for a unix
 [include]
 files = supervisord.d/*.ini
 ```
+3.2 、子配置文件说明（子配置文件是我们最需要关注的，以及经常配置的文件）
+
+子进程配置文件,可以添加在主配置文件的conf中，也可以编写一个配置文件，放在/etc/supervisor.d/目录下，以.ini作为扩展名（每个进程的配置文件都可以单独分拆也可以把相关的脚本放一起）。
+
+如任意定义一个和脚本相关的项目名称的选项组（/etc/supervisord.d/test.ini）：
+
+例子:
+```shell
+#项目名
+[program:test]
+#脚本目录
+directory=/opt/bin
+#脚本执行命令
+command=/usr/bin/python /opt/bin/test.py
+
+#supervisor启动的时候是否随着同时启动，默认True
+autostart=true
+#当程序exit的时候，这个program不会自动重启,默认unexpected，设置子进程挂掉后自动重启的情况，有三个选项，false,unexpected和true。如果为false的时候，无论什么情况下，都不会被重新启动，如果为unexpected，只有当进程的退出码不在下面的exitcodes里面定义的
+autorestart=false
+#这个选项是子进程启动多少秒之后，此时状态如果是running，则我们认为启动成功了。默认值为1
+startsecs=1
+
+#脚本运行的用户身份 
+user = www
+
+#日志输出 
+stderr_logfile=/tmp/test_stderr.log 
+stdout_logfile=/tmp/test_stdout.log 
+#把stderr重定向到stdout，默认 false
+redirect_stderr = true
+#stdout日志文件大小，默认 50MB
+stdout_logfile_maxbytes = 50M
+#stdout日志文件备份数
+stdout_logfile_backups = 20
+```
+
+## 四、supervisor常用命令
+```$
+supervisord -c /etc/supervisord.conf #启动supervisor服务命令
+supervisorctl status                #查看所有进程的状态
+supervisorctl stop test             #停止设置的test进程
+supervisorctl start test            #启动设置的test进程
+supervisorctl restart test          #重新启动设置的test进程
+supervisorctl update ：             #配置文件修改后可以使用该命令加载新的配置
+supervisorctl reload:               #重新启动配置中的所有程序
+```
+
+## 常见问题集锦
+> 1、unix:///var/run/supervisor/supervisor.sock no such file
+```text
+问题描述：安装好supervisor没有开启服务直接使用supervisorctl报的错
+解决办法：supervisord -c /etc/supervisord.conf 
+```
+2、command中指定的进程已经起来，但supervisor还不断重启
+```text
+问题描述：command中启动方式为后台启动，导致识别不到pid，然后不断重启，
+解决办法：supervisor无法检测后台启动进程的pid，而supervisor本身就是后台启动守护进程，因此不用担心这个
+```
+3、启动了多个supervisord服务，导致无法正常关闭服务
+```text
+问题描述：在运行supervisord -c /etc/supervisord.conf 之前，我直接运行过supervisord -c /etc/supervisord.d/xx.ini，导致有些进程被多个superviord管理，无法正常关闭进程。
+解决办法：使用ps -ef | grep supervisord 查看所有启动过的supervisord服务，kill相关的进程。
+```    
