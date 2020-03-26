@@ -40,7 +40,7 @@
 - mysqli,mysql,PDO的区别，以及pdo的prepare原理
 - [PHP7与PHP5有什么区别](./docs/01.PHP/PHP7与PHP5有什么区别.md)
 - Swoole 适用场景，协程实现方式
-
+- [php中传值与传引用的区别](./docs/01.PHP/simple.md)
 
 
 ### 二、数据库篇
