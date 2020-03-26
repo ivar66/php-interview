@@ -26,21 +26,21 @@
 - [php-fpm.conf配置](./docs/01.PHP/simple.md#php-fpm.conf配置)
 - [define()与const区别](https://segmentfault.com/a/1190000022128404)
 - traits 与 interfaces 区别 及 traits 解决了什么痛点？
-- __construct 与 __destruct 区别
-- == 与 === 区别
+- [__construct 与 __destruct区别](./docs/01.PHP/构造函数与析构函数.md)
+- [==与===区别](./docs/01.PHP/simple.md#php中===与==区别)
 - [__toString() 作用](https://www.php.net/manual/en/language.oop5.magic.php#object.tostring)
 - BOM 头是什么，怎么除去
 - 依赖注入实现原理
-- 如何异步执行命令
+- 如何异步执行命令?fastcgi_finish_request方法
 - Xhprof 、Xdebug 性能调试工具使用
 - [yield是什么，核心原理是什么，说个使用场景 yield](https://www.oschina.net/translate/cooperative-multitasking-using-coroutines-in-php)
 - Cookie 与 Session 区别,Session 共享、存活时间
 - Copy on write 原理，何时 GC？
 - PHP 进程模型，进程通讯方式，进程线程区别
 - mysqli,mysql,PDO的区别，以及pdo的prepare原理
-- PHP 7 与 PHP 5 有什么区别
+- [PHP7与PHP5有什么区别](./docs/01.PHP/PHP7与PHP5有什么区别.md)
 - Swoole 适用场景，协程实现方式
-- PHP|fastcgi_finish_request方法
+
 
 
 ### 二、数据库篇
@@ -131,6 +131,7 @@
 - 数据库设计
 - 静态化方案
 - 画出常见 PHP 应用架构图
+- [分布式架构总结](https://www.cnblogs.com/zhy-1992/p/9233789.html)
 
 ## 设计模式
 - 单例模式（重点）
