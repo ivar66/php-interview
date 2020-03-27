@@ -40,7 +40,8 @@
 - mysqli,mysql,PDO的区别，以及pdo的prepare原理
 - [PHP7与PHP5有什么区别](./docs/01.PHP/PHP7与PHP5有什么区别.md)
 - Swoole 适用场景，协程实现方式
-- [php中传值与传引用的区别](./docs/01.PHP/simple.md)
+- [php | 传值与传引用的区别](./docs/01.PHP/simple.md)
+- [php | abstract与interface之间的区别](https://www.cnblogs.com/lmaster/p/6363960.html)
 
 
 ### 二、数据库篇
@@ -110,7 +111,7 @@
 - 如何排查网站比较慢？
 - [supervisor用法详解？](https://segmentfault.com/a/1190000022121578)
 
-## 六架构篇
+## 六、架构篇
 - 偏运维（了解）：
     - 负载均衡（Nginx、HAProxy、DNS）
     - 主从复制（MySQL、Redis）
@@ -133,8 +134,8 @@
 - 画出常见 PHP 应用架构图
 - [分布式架构总结](https://www.cnblogs.com/zhy-1992/p/9233789.html)
 
-## 设计模式
-- 单例模式（重点）
+## 七、设计模式
+- [*单例模式](./docs/07/单例模式.md)
 - 工厂模式（重点）
 - 观察者模式（重点）
 - 依赖注入（重点）
@@ -142,7 +143,7 @@
 - 代理模式
 - 组合模式
 
-## 安全篇
+## 八、安全篇
 - SQL 注入
 - XSS 与 CSRF
 - 输入过滤
