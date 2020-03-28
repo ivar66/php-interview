@@ -42,10 +42,12 @@
 - Swoole 适用场景，协程实现方式
 - [php | 传值与传引用的区别](./docs/01.PHP/simple.md)
 - [php | abstract与interface之间的区别](https://www.cnblogs.com/lmaster/p/6363960.html)
+- php垃圾回收
+- [php hash_table和zend_array区别](./docs/01.PHP/PHP7与PHP5有什么区别.md)
 
 
 ### 二、数据库篇
-- MySQL 各个存储引擎、及区别（一定会问 MyISAM 与 Innodb 区别）
+- [MySQL各个存储引擎、及区别](./docs/02/MySQL各个存储引擎、及区别.md)
 - MySQL
     - CRUD
     - JOIN、LEFT JOIN 、RIGHT JOIN、INNER JOIN
@@ -82,6 +84,9 @@
 - 队列
 - 哈希表
 - 链表
+
+算法
+- [二叉树深度算法](./docs/03/leetcode/二叉树深度的算法.php)
 
 算法部分
 - 快速排序（手写）
