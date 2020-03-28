@@ -1,4 +1,4 @@
-# MySQL各个存储引擎、及区别
+# MySQL各个存储引擎及区别
 
 常见三种：Myisam,InnoDB,Memory
 
@@ -9,4 +9,6 @@
 - 4、Memory所有的数据都保留在内存中,不需要进行磁盘的IO所以读取的速度很快, 但是一旦关机的话表的结构会保留但是数据就会丢失,表支持Hash索引，因此查找速度很快
 
 
-参考资料：https://www.cnblogs.com/huangting/p/10883754.html
+参考资料：
+- https://www.cnblogs.com/huangting/p/10883754.html
+- https://www.cnblogs.com/rgever/p/9736374.html
