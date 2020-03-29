@@ -90,6 +90,7 @@
 - 链表
 
 算法部分
+- [动态规划解法的套路](https://mp.weixin.qq.com/s/pg-IJ8rA1duIzt5hW1Cycw)
 - [二叉树深度算法](./docs/03/leetcode/二叉树深度的算法.php)
 - [二叉树子节点个数](./docs/03/leetcode/二叉树子节点个数.php)
 - [回文串](./docs/03/leetcode/回文串.php)
