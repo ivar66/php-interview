@@ -71,6 +71,8 @@
 - MSSQL(了解)
     - 查询最新5条数据
 - NOSQL
+    - [Redis缓存失效策略](./docs/02/Redis缓存失效策略.md)
+    - [Redis getbit,setbit和BITCOUNT用法理解](./docs/02/Redisgetbit,setbit和bitcount用法理解.md)
     - Redis、Memcached、MongoDB的对比
     - 对比、适用场景（可从以下维度进行对比）
         - 持久化
