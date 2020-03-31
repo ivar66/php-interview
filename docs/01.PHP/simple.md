@@ -9,6 +9,10 @@
 - print_r：打印关于变量的易于理解的信息
 
 - var_dump：打印关于变量的易于理解的信息(带类型)
+### php array_merge和array+array的区别
+对数组key数字，array_merge 不会有变化，array+array 会用先出现的key取代后面相同的key
+
+对数组key字符串，array_merge会用后面相同的key取代前面出现的key，array+array依旧是前面为最终结果
 
 ### 单引号和双引号的区别
 双引号可以被分析器解析，单引号则不行

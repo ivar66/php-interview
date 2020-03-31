@@ -11,6 +11,7 @@
 ### 一、PHP篇
 - [人人都要知道的PHP底层运行机制与工作原理？](https://segmentfault.com/a/1190000015700130)
 - [echo、print、print_r、var_dump 区别](./docs/01.PHP/simple.md#echoprintprint_rvar_dump-区别)
+- [php array_merge和array+array的区别](./docs/01.PHP/simple.md#php array_merge和array+array的区别);
 - [了解大部分数组处理函数](https://www.php.net/manual/zh/ref.array.php)
 - [php5/php7 数组底层如何实现？](./docs/01.PHP/php_array.md)
 - [单引号和双引号的区别](./docs/01.PHP/simple.md#单引号和双引号的区别)
@@ -104,7 +105,8 @@
 
 ### 四、网络篇
 - HTTP 与 HTTPS 区别
-- 输入一个url之后发生了什么
+- [输入一个url之后发生了什么](https://zhuanlan.zhihu.com/p/43369093,https://segmentfault.com/a/1190000016239579)
+- [一文搞懂TCP与UDP的区别](https://www.cnblogs.com/fundebug/p/differences-of-tcp-and-udp.html)
 
 ## 五、服务器篇
 - 查看 CPU、内存、时间、系统版本等信息
@@ -122,6 +124,7 @@
 - 502 大概什么什么原因？ 如何排查  504呢？
 - 如何排查网站比较慢？
 - [supervisor用法详解？](https://segmentfault.com/a/1190000022121578)
+- [用过ping吗？是什么协议？](./docs/05/default.md#用过ping吗？是什么协议？)
 
 ## 六、架构篇
 - 偏运维（了解）：
@@ -136,6 +139,9 @@
     - 源代码编译、内存调优
 - 缓存
     - 工作中遇到哪里需要缓存，分别简述为什么
+    - [缓存雪崩、缓存穿透、缓存预热、缓存更新、缓存降级等问题](./docs/06/缓存雪崩、缓存穿透、缓存预热、缓存更新、缓存降级等问题.md)
+    - [布隆过滤器](./docs/06/什么是布隆过滤器.md)
+    
 - 搜索解决方案
 - 性能调优
 - 各维度监控方案
@@ -145,6 +151,7 @@
 - 静态化方案
 - 画出常见 PHP 应用架构图
 - [分布式架构总结](https://www.cnblogs.com/zhy-1992/p/9233789.html)
+- [一致性hash算法](./docs/06/什么是一致性Hash算法.md)
 
 ## 七、设计模式
 - [*单例模式](./docs/07/单例模式.md)
