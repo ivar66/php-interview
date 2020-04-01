@@ -43,9 +43,9 @@
 - Swoole 适用场景，协程实现方式
 - [php | 传值与传引用的区别](./docs/01.PHP/simple.md)
 - [php | abstract与interface之间的区别](https://www.cnblogs.com/lmaster/p/6363960.html)
-- php垃圾回收
+- [php垃圾回收](https://blog.csdn.net/qq_36172443/article/details/82291385)
 - [php hash_table和zend_array区别](./docs/01.PHP/PHP7与PHP5有什么区别.md)
-
+- [数组底层实现](./docs/01.PHP/数组底层实现.md)
 
 ### 二、数据库篇
 - MySQL
@@ -73,6 +73,10 @@
 - NOSQL
     - [Redis缓存失效策略](./docs/02/Redis缓存失效策略.md)
     - [Redis getbit,setbit和BITCOUNT用法理解](./docs/02/Redisgetbit,setbit和bitcount用法理解.md)
+    - [Redis为什么这么快](./docs/02/Redis为什么这么快.md)
+    - [68 道Redis面试题](https://zhuanlan.zhihu.com/p/112944545)
+    - [Redis Cluster](./docs/02/RedisCluster.md)
+    - [redis源码解读](https://zcheng.ren/sourcecodeanalysis/)
     - Redis、Memcached、MongoDB的对比
     - 对比、适用场景（可从以下维度进行对比）
         - 持久化
@@ -98,6 +102,7 @@
 - [二叉树子节点个数](./docs/03/leetcode/二叉树子节点个数.php)
 - [回文串](./docs/03/leetcode/回文串.php)
 - [链表是否有环](./docs/03/leetcode/链表是否有环.php)
+- [topK](./docs/03/algorithm/topK.md)
 - 快速排序（手写）
 - 冒泡排序（手写）
 - 二分查找（了解）
@@ -109,6 +114,7 @@
 - HTTP 与 HTTPS 区别
 - [输入一个url之后发生了什么](https://zhuanlan.zhihu.com/p/43369093,https://segmentfault.com/a/1190000016239579)
 - [一文搞懂TCP与UDP的区别](https://www.cnblogs.com/fundebug/p/differences-of-tcp-and-udp.html)
+- [浅谈IO模型](./docs/04/浅谈IO模型.md)
 
 ## 五、服务器篇
 - 查看 CPU、内存、时间、系统版本等信息
@@ -128,6 +134,7 @@
 - [supervisor用法详解？](https://segmentfault.com/a/1190000022121578)
 - [用过ping吗？是什么协议？](./docs/05/default.md#用过ping吗？是什么协议？)
 
+
 ## 六、架构篇
 - 偏运维（了解）：
     - 负载均衡（Nginx、HAProxy、DNS）
@@ -142,8 +149,7 @@
 - 缓存
     - 工作中遇到哪里需要缓存，分别简述为什么
     - [缓存雪崩、缓存穿透、缓存预热、缓存更新、缓存降级等问题](./docs/06/缓存雪崩、缓存穿透、缓存预热、缓存更新、缓存降级等问题.md)
-    - [布隆过滤器](./docs/06/什么是布隆过滤器.md)
-    
+    - [布隆过滤器](./docs/06/什么是布隆过滤器.md)   
 - 搜索解决方案
 - 性能调优
 - 各维度监控方案
@@ -154,6 +160,8 @@
 - 画出常见 PHP 应用架构图
 - [分布式架构总结](https://www.cnblogs.com/zhy-1992/p/9233789.html)
 - [一致性hash算法](./docs/06/什么是一致性Hash算法.md)
+- [Zookeeper 原理与优化](https://yuzhouwan.com/posts/31915/)
+- [分布式一致性最佳实践-raft](./docs/06/分布式一致性最佳实践-raft.md)
 
 ## 七、设计模式
 - [*单例模式](./docs/07/单例模式.md)

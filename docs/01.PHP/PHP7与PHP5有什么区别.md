@@ -69,7 +69,8 @@ try{
 ## 5、zval结构的变化
 php7将引用计数(refcount_gc)转移到了具体的value中，避免复制变量时需要复制两个结构，使php变量之间的复制、传递更加简洁、易懂，zval结构的大小也从24byte减少到了16byte
 
-参考链接：https://www.laruence.com/2018/04/08/3170.html
+参考链接：
+https://www.laruence.com/2018/04/08/3170.html
 
 ## 6. HashTable的变化
 HashTable结构的大小从72byte减小到了56byte, 数组元素Bucket结构也从72byte减小到了32byte
