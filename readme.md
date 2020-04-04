@@ -97,6 +97,7 @@
 - 链表
 
 算法部分
+- [剑指OFFER](./example/offer/readme.md)
 - [动态规划解法的套路](https://mp.weixin.qq.com/s/pg-IJ8rA1duIzt5hW1Cycw)
 - [二叉树深度算法](./docs/03/leetcode/二叉树深度的算法.php)
 - [二叉树子节点个数](./docs/03/leetcode/二叉树子节点个数.php)
@@ -162,6 +163,7 @@
 - [一致性hash算法](./docs/06/什么是一致性Hash算法.md)
 - [Zookeeper 原理与优化](https://yuzhouwan.com/posts/31915/)
 - [分布式一致性最佳实践-raft](./docs/06/分布式一致性最佳实践-raft.md)
+- [RabbitMQ核心概念以及工作原理](https://www.jianshu.com/p/256c502d09cd,https://blog.csdn.net/lettyisme/article/details/85233008)
 
 ## 七、设计模式
 - [*单例模式](./docs/07/单例模式.md)
