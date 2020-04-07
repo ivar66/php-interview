@@ -9,46 +9,40 @@
 ## 常见知识点
 
 ### 一、PHP篇
-- [人人都要知道的PHP底层运行机制与工作原理？](https://segmentfault.com/a/1190000015700130)
-- [echo、print、print_r、var_dump 区别](./docs/01.PHP/simple.md#echoprintprint_rvar_dump-区别)
-- [php array_merge和array+array的区别](./docs/01.PHP/simple.md#php array_merge和array+array的区别);
-- [了解大部分数组处理函数](https://www.php.net/manual/zh/ref.array.php)
-- [php5/php7 数组底层如何实现？](./docs/01.PHP/php_array.md)
-- [单引号和双引号的区别](./docs/01.PHP/simple.md#单引号和双引号的区别)
-- [isset和empty的区别](./docs/01.PHP/simple.md#isset和empty的区别)
-- [static、self、$this的区别](./docs/01.PHP/simple.md#static、self、$this的区别)
-- [include、require、include_once、require_once的区别](./docs/01.PHP/simple.md#include、require、include_once、require_once的区别)
-- [Cookie和Session](./docs/01.PHP/simple.md#Cookie和Session)
-- [魔术方法](./docs/01.PHP/simple.md#魔术方法)
-- [public、protected、private、final区别](./docs/01.PHP/simple.md#public、protected、private、final区别)
-- [客户端/服务端IP获取,了解代理透传,实际IP的概念](./docs/01.PHP/simple.md#客户端/服务端IP获取,了解代理透传,实际IP的概念)
-- [类的静态调用和实例化调用](./docs/01.PHP/simple.md#类的静态调用和实例化调用)
-- [php.ini 配置选项](./docs/01.PHP/simple.md#php.ini配置选项)
-- [php-fpm.conf配置](./docs/01.PHP/simple.md#php-fpm.conf配置)
-- [define()与const区别](https://segmentfault.com/a/1190000022128404)
-- traits 与 interfaces 区别 及 traits 解决了什么痛点？
-- [__construct 与 __destruct区别](./docs/01.PHP/构造函数与析构函数.md)
-- [==与===区别](./docs/01.PHP/simple.md#php中===与==区别)
-- [__toString() 作用](https://www.php.net/manual/en/language.oop5.magic.php#object.tostring)
-- BOM 头是什么，怎么除去
-- 依赖注入实现原理
-- 如何异步执行命令?fastcgi_finish_request方法
-- Xhprof 、Xdebug 性能调试工具使用
-- [yield是什么，核心原理是什么，说个使用场景 yield](https://www.oschina.net/translate/cooperative-multitasking-using-coroutines-in-php)
-- Cookie 与 Session 区别,Session 共享、存活时间
-- Copy on write 原理，何时 GC？
-- PHP 进程模型，进程通讯方式，进程线程区别
-- mysqli,mysql,PDO的区别，以及pdo的prepare原理
-- [PHP7与PHP5有什么区别](./docs/01.PHP/PHP7与PHP5有什么区别.md)
-- Swoole 适用场景，协程实现方式
-- [php | 传值与传引用的区别](./docs/01.PHP/simple.md)
-- [php | abstract与interface之间的区别](https://www.cnblogs.com/lmaster/p/6363960.html)
-- [php垃圾回收](https://blog.csdn.net/qq_36172443/article/details/82291385)
-- [php hash_table和zend_array区别](./docs/01.PHP/PHP7与PHP5有什么区别.md)
-- [数组底层实现](./docs/01.PHP/数组底层实现.md)
+- [01.echo、print、print_r、var_dump 区别](./docs/01/1.md)
+- [02.php array_merge和array+array的区别](./docs/01/2.md);
+- [03.PHP数组函数](./docs/01/3.md)
+- [04.php5/php7数组底层如何实现？](./docs/01/4.md)
+- [05.单引号和双引号的区别](./docs/01/5.md)
+- [06.isset和empty的区别](./docs/01/6.md)
+- [07.static、self、$this的区别](./docs/01/7.md)
+- [08.include、require、include_once、require_once的区别](./docs/01/8.md)
+- [09.Cookie和Session区别,Session 共享、存活时间](./docs/01/9.md)
+- [10.魔术方法](./docs/01/10.md)
+- [11.public、protected、private、final区别](./docs/01/11.md)
+- [12.客户端/服务端IP获取,了解代理透传,实际IP的概念](./docs/01/12.md)
+- [13.类的静态调用和实例化调用](./docs/01/13.md)
+- [14.==与===区别](./docs/01/14.md)
+- [15.define()与const区别](./docs/01/15.md)
+- [16.php|传值与传引用的区别](./docs/01/16.md)
+- [17.PHP7与PHP5有什么区别](./docs/01/17.md)
+- [18.如何异步执行命令?fastcgi_finish_request方法](./docs/01/18.md)
+- [19.yield是什么，核心原理是什么，说个使用场景 yield](./docs/01/19.md)
+- 20.Swoole 适用场景，协程实现方式
+- [21.人人都要知道的PHP底层运行机制与工作原理？](./docs/01/21.md)
+- [22.php | abstract与interface之间的区别](./docs/01/22.md)
+- [23.php垃圾回收](./docs/01/22.md)
+- [24.php.ini/php-fpm.conf配置选项](./docs/01/23.md)
+- [25.BOM 头是什么，怎么除去](./docs/01/24.md)
+- [26.PHP 进程模型，进程通讯方式，进程线程区别](./docs/01/24.md)
+- 27.traits 与 interfaces 区别 及 traits 解决了什么痛点？
+- 28.依赖注入实现原理
+- 29.Xhprof 、Xdebug 性能调试工具使用
+- 30.Copy on write 原理，何时 GC？
 
 ### 二、数据库篇
 - MySQL
+    - mysqli,mysql,PDO的区别，以及pdo的prepare原理
     - [MySQL各个存储引擎、及区别](./docs/02/MySQL各个存储引擎、及区别.md)
     - [什么是事务？事务的四个特性以及事务的隔离级别](./docs/02/什么是事务？事务的四个特性以及事务的隔离级别.md)
     - [分布式事务解决方案](https://www.jianshu.com/p/ee4071d0c951)
