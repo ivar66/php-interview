@@ -17,7 +17,7 @@
 - [06.isset和empty的区别](./docs/01/6.md)
 - [07.static、self、$this的区别](./docs/01/7.md)
 - [08.include、require、include_once、require_once的区别](./docs/01/8.md)
-- [09.Cookie和Session区别,Session 共享、存活时间](./docs/01/9.md)
+- [09.Cookie和Session区别,Session存储位置，共享、存活时间](./docs/01/9.md)
 - [10.魔术方法](./docs/01/10.md)
 - [11.public、protected、private、final区别](./docs/01/11.md)
 - [12.客户端/服务端IP获取,了解代理透传,实际IP的概念](./docs/01/12.md)
@@ -27,50 +27,56 @@
 - [16.php|传值与传引用的区别](./docs/01/16.md)
 - [17.PHP7与PHP5有什么区别](./docs/01/17.md)
 - [18.如何异步执行命令?fastcgi_finish_request方法](./docs/01/18.md)
-- [19.yield是什么，核心原理是什么，说个使用场景 yield](./docs/01/19.md)
+- [19.*yield是什么，核心原理是什么，说个使用场景 yield](./docs/01/19.md)
 - 20.Swoole 适用场景，协程实现方式
 - [21.人人都要知道的PHP底层运行机制与工作原理？](./docs/01/21.md)
-- [22.php | abstract与interface之间的区别](./docs/01/22.md)
-- [23.php垃圾回收](./docs/01/22.md)
-- [24.php.ini/php-fpm.conf配置选项](./docs/01/23.md)
-- [25.BOM 头是什么，怎么除去](./docs/01/24.md)
-- [26.PHP 进程模型，进程通讯方式，进程线程区别](./docs/01/24.md)
+- [22.php垃圾回收](./docs/01/22.md)
+- [23.php.ini/php-fpm.conf配置选项](./docs/01/23.md)
+- [24.BOM 头是什么，怎么除去](./docs/01/24.md)
+- [25.PHP 进程模型，进程通讯方式，进程线程区别](./docs/01/25.md)
+- [26.php | abstract与interface之间的区别](./docs/01/26.md)
 - 27.traits 与 interfaces 区别 及 traits 解决了什么痛点？
 - 28.依赖注入实现原理
 - 29.Xhprof 、Xdebug 性能调试工具使用
 - 30.Copy on write 原理，何时 GC？
+- 31.如何给 PHP 增加一个扩展
+- [32.php中的后期静态绑定](./docs/01/32.md)
 
 ### 二、数据库篇
-- MySQL
-    - mysqli,mysql,PDO的区别，以及pdo的prepare原理
-    - [MySQL各个存储引擎、及区别](./docs/02/MySQL各个存储引擎、及区别.md)
-    - [什么是事务？事务的四个特性以及事务的隔离级别](./docs/02/什么是事务？事务的四个特性以及事务的隔离级别.md)
-    - [分布式事务解决方案](https://www.jianshu.com/p/ee4071d0c951)
-    - [怎样避免慢查询](./docs/02/怎样避免慢查询.md)
-    - [索引类型](./docs/02/索引类型.md)
-    - CRUD
-    - JOIN、LEFT JOIN 、RIGHT JOIN、INNER JOIN
-    - UNION
-    - GROUP BY + COUNT + WHERE 组合案例
-    - [常用 MySQL 函数，如：now()、md5()、concat()、uuid()等](https://www.w3schools.com/sql/sql_ref_mysql.asp)
-    - `1:1`、`1:n`、`n:n` 各自适用场景
-    - 了解触发器是什么，说个使用场景
-    - 数据库优化手段
-        - 索引、联合索引（命中条件）
-        - 分库分表（`水平分表`、`垂直分表`）
-        - 分区
-        - 会使用 `explain` 分析 SQL 性能问题，了解各参数含义
+- 1.MySQL
+    - 1.mysqli,mysql,PDO的区别，以及pdo的prepare原理
+    - [2.MySQL各个存储引擎、及区别](./docs/02/MySQL各个存储引擎、及区别.md)
+    - [3.什么是事务？事务的四个特性以及事务的隔离级别](./docs/02/什么是事务？事务的四个特性以及事务的隔离级别.md)
+    - [4.分布式事务解决方案](https://www.jianshu.com/p/ee4071d0c951)
+    - [5.怎样避免慢查询](./docs/02/怎样避免慢查询.md)
+    - [6.索引类型](./docs/02/索引类型.md)
+    - [7.数据库主从复制M-S是怎么同步的？是推还是拉？会不会不同步？怎么办](./docs/02/1/7.md)
+    - 8.数据库常见语句(UNION,CRUD,JOIN、LEFT JOIN 、RIGHT JOIN、INNER JOIN,GROUP BY + COUNT + WHERE 组合案例)
+    - [9常用 MySQL 函数，如：now()、md5()、concat()、uuid()等](https://www.w3schools.com/sql/sql_ref_mysql.asp)
+    - 10.`1:1`、`1:n`、`n:n` 各自适用场景
+    - 11.了解触发器是什么，说个使用场景
+    - 12.数据库优化手段
+        - 12.1 索引、联合索引（命中条件）
+        - 12.2 分库分表（`水平分表`、`垂直分表`）
+        - 12.3 分区
+        - 12.4 会使用 `explain` 分析 SQL 性能问题，了解各参数含义
             * 重点理解 `type`、`rows`、`key`
-        - Slow Log（有什么用，什么时候需要）
-- MSSQL(了解)
-    - 查询最新5条数据
-- NOSQL
-    - [Redis缓存失效策略](./docs/02/Redis缓存失效策略.md)
-    - [Redis getbit,setbit和BITCOUNT用法理解](./docs/02/Redisgetbit,setbit和bitcount用法理解.md)
-    - [Redis为什么这么快](./docs/02/Redis为什么这么快.md)
-    - [68 道Redis面试题](https://zhuanlan.zhihu.com/p/112944545)
-    - [Redis Cluster](./docs/02/RedisCluster.md)
-    - [redis源码解读](https://zcheng.ren/sourcecodeanalysis/)
+        - 12.5 Slow Log（有什么用，什么时候需要）
+     - 13.为啥采用B+树，不采用红黑树等
+     - 14.什么是sql注入，怎么防止sql注入，xss和csrf
+     
+- 2.MSSQL(了解)
+    - 1 查询最新5条数据
+    
+- 3.NOSQL
+    - [1.Redis缓存失效策略](./docs/02/Redis缓存失效策略.md)
+    - [2.Redis getbit,setbit和BITCOUNT用法理解](./docs/02/Redisgetbit,setbit和bitcount用法理解.md)
+    - [3.Redis为什么这么快](./docs/02/Redis为什么这么快.md)
+    - [4.Redis Cluster](./docs/02/RedisCluster.md)
+    - [5.zset的实现](https://blog.csdn.net/weixin_38008100/article/details/94629753)
+    - [5.redis源码解读](https://zcheng.ren/sourcecodeanalysis/)
+    - [6.68道Redis面试题](https://zhuanlan.zhihu.com/p/112944545)
+    - [7.redis主从同步原理](./docs/02/3/7.md)
     - Redis、Memcached、MongoDB的对比
     - 对比、适用场景（可从以下维度进行对比）
         - 持久化
@@ -82,6 +88,8 @@
         - 性能对比
         - 支持事务
         - 应用场景
+- [4.ES](https://github.com/jacksu/awesome-es/blob/master/README.md)
+    - 1.refresh_interval用法
 
 ### 三、数据结构/算法篇
 数据结构
@@ -106,28 +114,28 @@
 - LRU 缓存淘汰算法（了解，Memcached 采用该算法）
 
 ### 四、网络篇
-- HTTP 与 HTTPS 区别
 - [输入一个url之后发生了什么](https://zhuanlan.zhihu.com/p/43369093,https://segmentfault.com/a/1190000016239579)
 - [一文搞懂TCP与UDP的区别](https://www.cnblogs.com/fundebug/p/differences-of-tcp-and-udp.html)
+- [tcp三次握手四次挥手，为啥多一次](./docs/04/3.md)
+- HTTP keep-alive
+- HTTP1.0,HTTP1.1和HTTP2.0区别
+- HTTP 与 HTTPS 区别
 - [浅谈IO模型](./docs/04/浅谈IO模型.md)
 
 ## 五、服务器篇
-- 查看 CPU、内存、时间、系统版本等信息
-- find 、grep 查找文件
-- awk 处理文本
-- 查看命令所在目录
-- 自己编译过 PHP 吗？如何打开 readline 功能
-- 如何查看 PHP 进程的内存、CPU 占用
-- 如何给 PHP 增加一个扩展
-- 修改 PHP Session 存储位置、修改 INI 配置参数
-- 负载均衡有哪几种，挑一种你熟悉的说明其原理
-- 数据库主从复制 M-S 是怎么同步的？是推还是拉？会不会不同步？怎么办
-- 如何保障数据的可用性，即使被删库了也能恢复到分钟级别。你会怎么做。
-- 数据库连接过多，超过最大值，如何优化架构。从哪些方便处理？
-- 502 大概什么什么原因？ 如何排查  504呢？
-- 如何排查网站比较慢？
-- [supervisor用法详解？](https://segmentfault.com/a/1190000022121578)
-- [用过ping吗？是什么协议？](./docs/05/default.md#用过ping吗？是什么协议？)
+- 1.查看 CPU、内存、时间、系统版本等信息
+- 2.find 、grep 查找文件
+- 3.awk 处理文本
+- 4.查看命令所在目录
+- 5.自己编译过 PHP 吗？如何打开 readline 功能
+- 6.如何查看 PHP 进程的内存、CPU 占用
+- 7.负载均衡有哪几种，挑一种你熟悉的说明其原理
+- 8.如何保障数据的可用性，即使被删库了也能恢复到分钟级别。你会怎么做。
+- 9.数据库连接过多，超过最大值，如何优化架构。从哪些方便处理？
+- 10.502 大概什么什么原因？ 如何排查  504呢？
+- 11.如何排查网站比较慢？
+- [12.supervisor用法详解？](https://segmentfault.com/a/1190000022121578)
+- [13.用过ping吗？是什么协议？](docs/05/13.md#用过ping吗？是什么协议？)
 
 
 ## 六、架构篇
