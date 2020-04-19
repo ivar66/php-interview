@@ -36,11 +36,12 @@
 - [25.PHP 进程模型，进程通讯方式，进程线程区别](./docs/01/25.md)
 - [26.php | abstract与interface之间的区别](./docs/01/26.md)
 - 27.traits 与 interfaces 区别 及 traits 解决了什么痛点？
-- 28.依赖注入实现原理
+- [28.依赖注入(ioc)实现原理](https://segmentfault.com/a/1190000015173300,https://segmentfault.com/a/1190000002424023)
 - 29.Xhprof 、Xdebug 性能调试工具使用
 - 30.Copy on write 原理，何时 GC？
 - 31.如何给 PHP 增加一个扩展
 - [32.php中的后期静态绑定](./docs/01/32.md)
+- [33.php反射](https://www.kancloud.cn/a173512/php_note/1344389)
 
 ### 二、数据库篇
 - 1.MySQL
@@ -69,14 +70,16 @@
     - 1 查询最新5条数据
     
 - 3.NOSQL
-    - [1.Redis缓存失效策略](./docs/02/Redis缓存失效策略.md)
-    - [2.Redis getbit,setbit和BITCOUNT用法理解](./docs/02/Redisgetbit,setbit和bitcount用法理解.md)
-    - [3.Redis为什么这么快](./docs/02/Redis为什么这么快.md)
-    - [4.Redis Cluster](./docs/02/RedisCluster.md)
+    - [0.redis常见面试问答***](https://zhuanlan.zhihu.com/p/118561398)
+    - [1.Redis缓存失效策略](./docs/02/3/Redis缓存失效策略.md)
+    - [2.Redis getbit,setbit和BITCOUNT用法理解](./docs/02/3/Redisgetbit,setbit和bitcount用法理解.md)
+    - [3.Redis为什么这么快](./docs/02/3/Redis为什么这么快.md)
+    - [4.Redis Cluster](./docs/02/3/RedisCluster.md)
     - [5.zset的实现](https://blog.csdn.net/weixin_38008100/article/details/94629753)
-    - [5.redis源码解读](https://zcheng.ren/sourcecodeanalysis/)
+    - [5.redis源码解读](https://zcheng.ren/sourcecodeanalysis/,https://github.com/huangz1990/redis-3.0-annotated)
     - [6.68道Redis面试题](https://zhuanlan.zhihu.com/p/112944545)
     - [7.redis主从同步原理](./docs/02/3/7.md)
+    - [8.Redisson基本原理](./docs/02/3/8.md)
     - Redis、Memcached、MongoDB的对比
     - 对比、适用场景（可从以下维度进行对比）
         - 持久化
@@ -114,12 +117,13 @@
 - LRU 缓存淘汰算法（了解，Memcached 采用该算法）
 
 ### 四、网络篇
-- [输入一个url之后发生了什么](https://zhuanlan.zhihu.com/p/43369093,https://segmentfault.com/a/1190000016239579)
+- [输入一个url之后发生了什么](https://zhuanlan.zhihu.com/p/43369093,https://segmentfault.com/a/1190000016239579，)
 - [一文搞懂TCP与UDP的区别](https://www.cnblogs.com/fundebug/p/differences-of-tcp-and-udp.html)
 - [tcp三次握手四次挥手，为啥多一次](./docs/04/3.md)
 - HTTP keep-alive
 - HTTP1.0,HTTP1.1和HTTP2.0区别
-- HTTP 与 HTTPS 区别
+- [HTTP 与 HTTPS 区别](https://blog.csdn.net/sinyu890807/article/details/104546558) 
+- [tcp滑动窗口协议](https://www.cnblogs.com/coder-programming/p/10627746.html)
 - [浅谈IO模型](./docs/04/浅谈IO模型.md)
 
 ## 五、服务器篇
