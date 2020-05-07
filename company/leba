@@ -1,0 +1,22 @@
+4.23
+1、索引创建原则
+2、varchar1024 字符串，数字，日期，枚举
+3、redis内存分页
+4、restful
+5、强制索引 SELECT  * FROM XXX_log force index(ctime) WHERE
+6、oop思想是啥
+7、大表加索引
+
+5.4
+1、A,B表相连，a存在b不存在的sql
+select * from a left join b on a.id = b.id where a.id ='xxx' and b.id = null;
+2、对象判断是否为空 http://hellolyfing.github.io/2018/02/01/PHP%E5%AF%B9%E8%B1%A1stdClass%E5%88%A4%E6%96%AD%E6%98%AF%E5%90%A6%E4%B8%BA%E7%A9%BA.html
+empty((array)($object))
+3、public protect private的区别
+Protect 【受保护的】用protected修饰的类成员，可以在本类和子类中被调用，但是在其他地方不能被调用。
+4、mysql 中一个字段中某个子字段的长度 SELECT FName, LENGTH(FName) - LENGTH( REPLACE(FName,'r','') ) FROM T_Person
+5、es中string如何进行相关的范围查询
+6、array常用数组
+7、redis的使用场景
+8、mysql的常见索引的使用
+9、interface和abstract的区别

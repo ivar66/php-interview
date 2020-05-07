@@ -76,7 +76,7 @@
     - [3.Redis为什么这么快](./docs/02/3/Redis为什么这么快.md)
     - [4.Redis Cluster](./docs/02/3/RedisCluster.md)
     - [5.zset的实现](https://blog.csdn.net/weixin_38008100/article/details/94629753)
-    - [5.redis源码解读](https://zcheng.ren/sourcecodeanalysis/,https://github.com/huangz1990/redis-3.0-annotated)
+    - [5.redis源码解读](https://zcheng.ren/sourcecodeanalysis/,https://github.com/huangz1990/redis-3.0-annotated,https://zhuanlan.zhihu.com/p/133514706)
     - [6.68道Redis面试题](https://zhuanlan.zhihu.com/p/112944545)
     - [7.redis主从同步原理](./docs/02/3/7.md)
     - [8.Redisson基本原理](./docs/02/3/8.md)
@@ -91,8 +91,11 @@
         - 性能对比
         - 支持事务
         - 应用场景
-- [4.ES](https://github.com/jacksu/awesome-es/blob/master/README.md)
+- [4.ES](https://github.com/jacksu/awesome-es/blob/master/README.md，https://blog.csdn.net/wojiushiwo987/article/details/86558214)
     - 1.refresh_interval用法
+    - 主节点挂了怎么办？怎么再选
+    - ES的倒排
+    - 详细描述一下Elasticsearch索引文档的过程？
 
 ### 三、数据结构/算法篇
 数据结构
@@ -167,7 +170,7 @@
 - 画出常见 PHP 应用架构图
 - [分布式架构总结](https://www.cnblogs.com/zhy-1992/p/9233789.html)
 - [一致性hash算法](./docs/06/什么是一致性Hash算法.md)
-- [Zookeeper 原理与优化](https://yuzhouwan.com/posts/31915/)
+- [Zookeeper 原理与优化]()
 - [分布式一致性最佳实践-raft](./docs/06/分布式一致性最佳实践-raft.md)
 - [RabbitMQ核心概念以及工作原理](https://www.jianshu.com/p/256c502d09cd,https://blog.csdn.net/lettyisme/article/details/85233008)
 

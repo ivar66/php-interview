@@ -43,6 +43,24 @@ function FindKthToTail($head, $k){
     return $p;
 }
 
+function FindKthToTail2($head,$k){
+    $i = 1;
+    $p = $head;
+    $q = null;
+    while($p != null){
+        if($i == $k){
+            $q = $head;
+        }
+        if($i > $k){
+            $q = $q->next;
+        }
+        $p = $p->next;
+        $i ++ ;
+
+    }
+    return $q;
+}
+
 $node1 = new ListNode(1);
 $node2 = new ListNode(2);
 $node3 = new ListNode(3);
