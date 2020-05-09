@@ -45,13 +45,12 @@ function topk2($nums,$k){
         }
 
     }
-        $te = [];
+    $te = [];
     while ($heap->valid()) {
         $cur = $heap->current();
         $te[] = $cur;
         $heap->next();
     }
-    print_r($te);die();
     return $heap->top();
 }
 //function max($numbers,$k){
