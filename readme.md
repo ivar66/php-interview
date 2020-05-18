@@ -46,11 +46,11 @@
 ### 二、数据库篇
 - 1.MySQL
     - 1.mysqli,mysql,PDO的区别，以及pdo的prepare原理
-    - [2.MySQL各个存储引擎、及区别](./docs/02/MySQL各个存储引擎、及区别.md)
-    - [3.什么是事务？事务的四个特性以及事务的隔离级别](./docs/02/什么是事务？事务的四个特性以及事务的隔离级别.md)
+    - [2.MySQL各个存储引擎、及区别](./docs/02/1/MySQL各个存储引擎、及区别.md)
+    - [3.什么是事务？事务的四个特性以及事务的隔离级别](./docs/02/1/什么是事务？事务的四个特性以及事务的隔离级别.md)
     - [4.分布式事务解决方案](https://www.jianshu.com/p/ee4071d0c951)
-    - [5.怎样避免慢查询](./docs/02/怎样避免慢查询.md)
-    - [6.索引类型](./docs/02/索引类型.md)
+    - [5.怎样避免慢查询](./docs/02/1/怎样避免慢查询.md)
+    - [6.索引类型](./docs/02/1/索引类型.md)
     - [7.数据库主从复制M-S是怎么同步的？是推还是拉？会不会不同步？怎么办](./docs/02/1/7.md)
     - 8.数据库常见语句(UNION,CRUD,JOIN、LEFT JOIN 、RIGHT JOIN、INNER JOIN,GROUP BY + COUNT + WHERE 组合案例)
     - [9常用 MySQL 函数，如：now()、md5()、concat()、uuid()等](https://www.w3schools.com/sql/sql_ref_mysql.asp)
@@ -65,6 +65,7 @@
         - 12.5 Slow Log（有什么用，什么时候需要）
      - 13.为啥采用B+树，不采用红黑树等
      - 14.什么是sql注入，怎么防止sql注入，xss和csrf
+     - 15、[mysql执行过程](https://www.cnblogs.com/fanguangdexiaoyuer/p/10268570.html)
      
 - 2.MSSQL(了解)
     - 1 查询最新5条数据
@@ -173,6 +174,7 @@
 - [Zookeeper 原理与优化]()
 - [分布式一致性最佳实践-raft](./docs/06/分布式一致性最佳实践-raft.md)
 - [RabbitMQ核心概念以及工作原理](https://www.jianshu.com/p/256c502d09cd,https://blog.csdn.net/lettyisme/article/details/85233008)
+- [单点登陆](https://www.jianshu.com/p/75edcc05acfd)
 
 ## 七、设计模式
 - [*单例模式](./docs/07/单例模式.md)
@@ -213,3 +215,4 @@
 - JWT
 - PHP 中 `json_encode(['key'=>123]);` 与 `return json_encode([]);` 区别，会产生什么问题？如何解决
 - 写一个正则如何去匹配纯数字
+
